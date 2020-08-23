@@ -64,9 +64,9 @@ object HOFsCurries extends App {
   val add2 = (x: Int) => x + 2
   val times3 = (x:Int) => x * 3
 
-  val composed = composed(add2, times3)
-  val ordered = andThen(add2, times3)
-
-  println(composed(4))
-  println(ordered(4))
+//  val composed = composed(add2, times3)
+//  val ordered = andThen(add2, times3)
+//
+//  println(composed(4))
+//  println(ordered(4))
 }

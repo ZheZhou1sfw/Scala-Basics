@@ -126,4 +126,12 @@ object ListTest extends App {
   println(listOfIntegers.sort((x, y) => y - x))
   println(anotherListOfIntegers.zipWith[String, String](listOfStrings, _ + "-" + _))
   println(listOfIntegers.fold(0)(_ + _)) // reduce
+
+  // try for comprehensions
+  val combinations = for {
+    a <- listOfIntegers
+    s <- listOfStrings
+  } yield(a + "?" + s)
+  println(combinations)
+
 }
